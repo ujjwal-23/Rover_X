@@ -1,0 +1,10 @@
+<launch>
+<node name="input_joy" pkg = "joy" type = "joy_node" />
+<node name="atom_core_data" pkg = "atom_drive" type = "main.py" />
+</launch>
+
+
+
+
+
+

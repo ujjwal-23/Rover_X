@@ -1,0 +1,22 @@
+<launch>
+<node name="input_joy" pkg = "joy" type = "joy_node" />
+<node name="atom_science_data" pkg = "atom_drive" type = "science.py" />
+<node name="display_STM_science" pkg = "atom_drive" type = "display_data_science.py" />
+</launch>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

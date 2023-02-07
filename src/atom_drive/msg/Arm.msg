@@ -1,0 +1,15 @@
+uint8 base_speed
+uint8 base_dir
+uint8 shoulder_speed
+uint8 shoulder_dir
+uint8 elbow_speed
+uint8 elbow_dir
+uint8 yaw_speed
+uint8 yaw_dir
+uint8 pitch_speed
+uint8 pitch_dir
+uint8 roll_speed
+uint8 roll_dir
+uint8 end_eff_speed
+uint8 end_eff_dir
+uint8 sol_dir

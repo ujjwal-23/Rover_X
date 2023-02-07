@@ -1,0 +1,1 @@
+/home/devanshu/Downloads/rpi-car-arrow-detection-using-cascade-classifier-master/haar_trained_xml/right/cascade.xml

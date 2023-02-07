@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Feedback</class>
+ <widget class="QMainWindow" name="Feedback">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>873</width>
+    <height>282</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(46, 52, 54);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="3">
+     <widget class="QLabel" name="label_14">
+      <property name="font">
+       <font>
+        <family>Courier New</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white
+</string>
+      </property>
+      <property name="text">
+       <string>RD</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" rowspan="2">
+     <widget class="QLabel" name="label_5">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white</string>
+      </property>
+      <property name="text">
+       <string>ARM</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
+     <widget class="QLabel" name="label_7">
+      <property name="font">
+       <font>
+        <family>Courier New</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white
+</string>
+      </property>
+      <property name="text">
+       <string>ELBOW</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QLabel" name="label_6">
+      <property name="font">
+       <font>
+        <family>Courier New</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white
+</string>
+      </property>
+      <property name="text">
+       <string>SHOULDER</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="3">
+     <widget class="QLCDNumber" name="elbow"/>
+    </item>
+    <item row="4" column="1" colspan="3">
+     <widget class="QLabel" name="mode">
+      <property name="font">
+       <font>
+        <family>Courier New</family>
+        <pointsize>16</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font: 75 16pt &quot;Courier New&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLCDNumber" name="ls"/>
+    </item>
+    <item row="2" column="0" rowspan="2">
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+alternate-background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>MOTION</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="7">
+     <widget class="QLabel" name="label_10">
+      <property name="font">
+       <font>
+        <family>Courier New</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white
+</string>
+      </property>
+      <property name="text">
+       <string>YAW</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="QLabel" name="label_15">
+      <property name="font">
+       <font>
+        <family>Courier New</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white
+</string>
+      </property>
+      <property name="text">
+       <string>RS</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLCDNumber" name="base"/>
+    </item>
+    <item row="6" column="6">
+     <widget class="QLCDNumber" name="pitch"/>
+    </item>
+    <item row="3" column="3">
+     <widget class="QLCDNumber" name="rd"/>
+    </item>
+    <item row="6" column="2">
+     <widget class="QLCDNumber" name="shoulder"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;</string>
+      </property>
+      <property name="text">
+       <string>MODE</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLabel" name="label_13">
+      <property name="font">
+       <font>
+        <family>Courier New</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white
+</string>
+      </property>
+      <property name="text">
+       <string>LS</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="5">
+     <widget class="QLCDNumber" name="roll"/>
+    </item>
+    <item row="5" column="9">
+     <widget class="QLabel" name="label_11">
+      <property name="font">
+       <font>
+        <family>Courier New</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white
+</string>
+      </property>
+      <property name="text">
+       <string>GRIP</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="6">
+     <widget class="QLabel" name="label_9">
+      <property name="font">
+       <font>
+        <family>Courier New</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white
+</string>
+      </property>
+      <property name="text">
+       <string>PITCH</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="QLCDNumber" name="rs"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="label_12">
+      <property name="font">
+       <font>
+        <family>Courier New</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+border-color: rgb(255, 255, 255);
+
+</string>
+      </property>
+      <property name="text">
+       <string>LD</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="5">
+     <widget class="QLabel" name="label_8">
+      <property name="font">
+       <font>
+        <family>Courier New</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white
+</string>
+      </property>
+      <property name="text">
+       <string>ROLL</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="7">
+     <widget class="QLCDNumber" name="yaw"/>
+    </item>
+    <item row="6" column="9">
+     <widget class="QLCDNumber" name="grip"/>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>Courier New</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white
+</string>
+      </property>
+      <property name="text">
+       <string>BASE</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLCDNumber" name="ld">
+      <property name="segmentStyle">
+       <enum>QLCDNumber::Filled</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

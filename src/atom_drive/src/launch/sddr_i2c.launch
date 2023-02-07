@@ -1,0 +1,3 @@
+<launch>
+<node name="i2c_ping" pkg = "atom_drive" type = "sddr_i2c.py"/>
+</launch>

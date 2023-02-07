@@ -1,0 +1,21 @@
+<launch>
+
+<group>
+    <remap from='joy' to='joy0'/>
+    <node pkg='joy' name='joy0' type='joy_node'>
+        <param name='dev' type='string' value='/dev/input/js1'/>
+    </node>
+</group>
+
+<group>
+    <remap from='joy' to='joy1'/>
+    <node pkg='joy' name='joy1' type='joy_node'>
+        <param name='dev' type='string' value='/dev/input/js2'/>
+    </node>
+</group>
+
+<node name="atom_arm_data" pkg = "atom_drive" type = "sddr_arm.py" output = "screen"/>
+<node name="atom_drive_data" pkg = "atom_drive" type = "sddr_drive.py" />
+
+</launch>
+

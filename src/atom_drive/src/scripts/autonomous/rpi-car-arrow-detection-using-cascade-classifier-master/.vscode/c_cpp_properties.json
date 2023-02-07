@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/devanshu/drive_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/devanshu/drive_ws/src/atom_drive/include/**",
+        "/home/devanshu/drive_ws/src/ublox/ublox_gps/include/**",
+        "/home/devanshu/drive_ws/src/ublox/ublox_msg_filters/include/**",
+        "/home/devanshu/drive_ws/src/ublox/ublox_msgs/include/**",
+        "/home/devanshu/drive_ws/src/ublox/ublox_serialization/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

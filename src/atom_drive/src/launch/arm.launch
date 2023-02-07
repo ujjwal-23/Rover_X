@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+<node name="input_joy" pkg = "joy" type = "joy_node" />
+<node name="atom_arm_data" pkg = "atom_drive" type = "arm.py" output="screen" />\
+<!-- <node name="atom_arm_publish" pkg = "atom_drive" type = "arm_i2c.py" output="screen" /> -->
+</launch>

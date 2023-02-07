@@ -1,0 +1,10 @@
+vlc -I http -vv rtsp://admin:RoverX123@192.168.1.64/1 ":sout=#transcode{vcodec=h264,vb=0,scale=0,acodec=mp4a,ab=128,channels=2,samplerate=44100}:http{mux=ffmpeg{mux=flv},dst=:9911/}"
+
+
+vlc -vvv -Idummy rtsp://admin:RoverX123@192.168.1.64/1/streaming/channels/2/preview ":sout #transcode{vcodec=MJPG,venc=ffmpeg{strict=1},fps=10,width=640,height=360}:standard{access=http{mime=multipart/x-mixed-replace;boundary=--7b3cc56e5f51db803f790dad720ed50a},mux=mpjpeg,dst=:9911/}"
+
+.\server\libs\ffmpeg -i rtsp://admin:RoverX123@192.168.1.64/1:554/stream1 -fflags flush_packets -max_delay 5 -flags -global_header -hls_time 5 -hls_list_size 3 -vcodec copy -y .\videos\ipcam\index.m3u8
+
+
+ffmpeg -v info -i rtsp://admin:RoverX123@192.168.1.64/1 -c:v copy -c:a copy -bufsize 1835k -pix_fmt yuv420p -flags -global_header -hls_time 10 -hls_list_size 6 -hls_wrap 10 -start_number 1 /video.m3u8
+

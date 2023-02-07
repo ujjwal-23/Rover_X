@@ -1,0 +1,26 @@
+<launch>
+<group>
+    <remap from='joy' to='joy0'/>
+    <node pkg='joy' name='joy0' type='joy_node'>
+	<param name='dev' type='string' value='/dev/input/js1'/>
+    </node>
+</group>
+<node name="atom_science_data_bsx" pkg = "atom_drive" type = "science_bsx2.py" />
+</launch>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
