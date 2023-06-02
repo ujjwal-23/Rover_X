@@ -41,7 +41,7 @@ def publisher(pub):
     rospy.loginfo('connected')
     
     rate = rospy.Rate(10)
-    core = drive()
+    core = Drive()
     if x == 1:
         while not rospy.is_shutdown():
             if count%2 == 1:

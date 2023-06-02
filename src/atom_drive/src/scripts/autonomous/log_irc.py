@@ -14,19 +14,19 @@ def callback(data):
     x = data.data
     if w ==1:
         fs = open("data.txt","w")
-        if x>315 or x <= 45
+        if x>315 or x <= 45:
             fs.write("direction" + 'north' +"\n")
             fs.close()
 
-        elif x>225 and x <= 315
+        elif x>225 and x <= 315:
             fs.write("direction" + "east" +"\n")
             fs.close()
 
-        elif x>135 and x <= 225
+        elif x>135 and x <= 225:
             fs.write("direction" + "south" +"\n")
             fs.close()
 
-        elif x>45 and x <= 135
+        elif x>45 and x <= 135:
             fs.write("direction" + "west" +"\n")
             fs.close()
 
